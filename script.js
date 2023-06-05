@@ -12,30 +12,18 @@ let secondCard = false;
 
 //Items array
 const items = [
-  // { name: "bee", image: "bee.png" },
-  // { name: "crocodile", image: "crocodile.png" },
-  // { name: "macaw", image: "macaw.png" },
-    // { name: "gorilla", image: "gorilla.png" },
-  // { name: "tiger", image: "tiger.png" },
-  // { name: "monkey", image: "monkey.png" },
-  // { name: "chameleon", image: "chameleon.png" },
-  // { name: "piranha", image: "piranha.png" },
-  // { name: "anaconda", image: "anaconda.png" },
-  // { name: "sloth", image: "sloth.png" },
-  // { name: "cockatoo", image: "cockatoo.png" },
-  // { name: "toucan", image: "toucan.png" },
-  { name: "red", image: "red.png" },
-  { name: "blue", image: "blue.png" },
-  { name: "green", image: "green.png" },
-  { name: "black", image: "black.png" },
-  { name: "brown", image: "brown.png" },
-  { name: "cyan", image: "cyan.png" },
-  { name: "gray", image: "gray.png" },
-  { name: "magenta", image: "magenta.png" },
-  { name: "orange", image: "orange.png" },
-  { name: "purple", image: "purple.png" },
-  { name: "white", image: "white.png" },
-  { name: "yellow", image: "yellow.png" },
+  { name: "red", image: "./cards/red.png" },
+  { name: "blue", image: "./cards/blue.png" },
+  { name: "green", image: "./cards/green.png" },
+  { name: "black", image: "./cards/black.png" },
+  { name: "brown", image: "./cards/brown.png" },
+  { name: "cyan", image: "./cards/cyan.png" },
+  { name: "gray", image: "./cards/gray.png" },
+  { name: "magenta", image: "./cards/magenta.png" },
+  { name: "orange", image: "./cards/orange.png" },
+  { name: "purple", image: "./cards/purple.png" },
+  { name: "white", image: "./cards/white.png" },
+  { name: "yellow", image: "./cards/yellow.png" },
 ];
 
 //Initial Time
@@ -68,8 +56,7 @@ const movesCounter = () => {
 //Pick random objects from the items array
 const generateRandom = (size = 4) => {
   //temporary array
-  let tempArray = [...items];
-  //initializes cardValues array
+  let tempArray = [...items]; 
   let cardValues = [];
   //size should be double (4*4 matrix)/2 since pairs of objects would exist
   size = (size * size) / 2;
